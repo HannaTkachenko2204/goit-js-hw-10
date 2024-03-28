@@ -1,1 +1,0 @@
-{"version":3,"file":"1-timer-31a4dbd6.js","sources":["../../src/js/1-timer.js"],"sourcesContent":["import flatpickr from \"flatpickr\";\nimport \"flatpickr/dist/flatpickr.min.css\";\n\nconsole.log(\"Timer\");"],"names":[],"mappings":"6BAGA,QAAQ,IAAI,OAAO"}
