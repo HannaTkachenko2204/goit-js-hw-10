@@ -14,8 +14,10 @@ const options = {
     minuteIncrement: 1, // Integer(целое число) 5 Регулирует шаг ввода минут (включая прокрутку)
     onClose(selectedDates) { // Function null Функции, которые будут активироваться каждый раз при закрытии календаря.
       console.log(selectedDates[0]); // selectedDates — массив объектов Date, выбранных пользователем. Если даты не выбраны, массив пуст.
+      userSelectedDate = selectedDates[0];
+      console.log(userSelectedDate);
     },
   };
 
-  //function flatpickr(inputEl, options) {};
+  flatpickr(inputEl, options);
 
