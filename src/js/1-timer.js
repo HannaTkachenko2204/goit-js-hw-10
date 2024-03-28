@@ -1,3 +1,6 @@
+import flatpickr from "flatpickr";
+import "flatpickr/dist/flatpickr.min.css";
+
 console.log("Timer");
 
 const inputEl = document.querySelector("#datetime-picker");
@@ -14,7 +17,5 @@ const options = {
     },
   };
 
-  function flatpickr(inputEl, options) {
-
-  };
+  //function flatpickr(inputEl, options) {};
 
