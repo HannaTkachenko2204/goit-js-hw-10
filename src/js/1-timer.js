@@ -77,6 +77,7 @@ function resalt() {
     secondsEl.textContent = addLeadingZero(convertMs(deltaTime).seconds);
   } else {
     clearInterval(intervalId);
+    inputEl.disabled = false;
   }
 }
 
