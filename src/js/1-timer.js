@@ -41,36 +41,33 @@ const options = {
     minuteIncrement: 1, // Integer(целое число) 5 Регулирует шаг ввода минут (включая прокрутку)
     onClose(selectedDates) { // Function null Функции, которые будут активироваться каждый раз при закрытии календаря.
     // selectedDates — массив объектов Date, выбранных пользователем. Если даты не выбраны, массив пуст.
-      if(selectedDates[0].getTime() < options.defaultDate.getTime()) {
+    if(selectedDates[0].getTime() < options.defaultDate.getTime()) {
         window.alert("Please choose a date in the future");
         btnEl.disabled = true;
-        return;
+      } else {
+        btnEl.disabled = false;
+        userSelectedDate = selectedDates[0];
+        console.log(userSelectedDate);
       }
-      btnEl.disabled = false;
-      userSelectedDate = selectedDates[0];
-      console.log(userSelectedDate);
     },
   };
 
   flatpickr(inputEl, options);
 
+  function resalt() {
+    const deltaTime = userSelectedDate.getTime() - Date.now();
+    console.log(deltaTime);
+    daysEl.textContent = addLeadingZero(convertMs(deltaTime).days);
+    hoursEl.textContent = addLeadingZero(convertMs(deltaTime).hours);
+    minutesEl.textContent = addLeadingZero(convertMs(deltaTime).minutes);
+    secondsEl.textContent = addLeadingZero(convertMs(deltaTime).seconds);
+  }
+
   function handleClick() {
     btnEl.disabled = true;
     inputEl.disabled = true;
-    // const resalt = userSelectedDate.getTime() - Date.now();
-    // console.log(resalt);
-    // daysEl.textContent = addLeadingZero(convertMs(resalt).days);
-    // hoursEl.textContent = addLeadingZero(convertMs(resalt).hours);
-    // minutesEl.textContent = addLeadingZero(convertMs(resalt).minutes);
-    // secondsEl.textContent = addLeadingZero(convertMs(resalt).seconds);
-    setInterval(() => {
-      const resalt = userSelectedDate.getTime() - Date.now();
-      console.log(resalt);
-      daysEl.textContent = addLeadingZero(convertMs(resalt).days);
-      hoursEl.textContent = addLeadingZero(convertMs(resalt).hours);
-      minutesEl.textContent = addLeadingZero(convertMs(resalt).minutes);
-      secondsEl.textContent = addLeadingZero(convertMs(resalt).seconds);
-    }, 1000)
+    resalt();
+    setInterval(() => resalt(), 1000)
   };
 
   btnEl.addEventListener("click", handleClick);
