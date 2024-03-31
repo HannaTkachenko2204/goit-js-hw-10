@@ -1,46 +1,46 @@
 .form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .spanDelay {
-    display: flex;
+  display: flex;
 }
 
 .inputNumber {
-    padding: 0;
+  padding: 0;
 
-    width: 360px;
-    height: 40px;
+  width: 360px;
+  height: 40px;
 }
 
 .stateEl {
-    margin: 0;
-    padding: 0;
-    width: 360px;
-    height: 75px;
+  margin: 0;
+  padding: 0;
+  width: 360px;
+  height: 75px;
 }
 
 .submitBtn {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    letter-spacing: 0.04em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.04em;
 
-    width: 360px;
-    height: 40px;
-    
-    background-color: #4E75FF;
-    color: #FFFFFF;
+  width: 360px;
+  height: 40px;
 
-    border-radius: 8px;
-    border: none;
+  background-color: #4e75ff;
+  color: #ffffff;
+
+  border-radius: 8px;
+  border: none;
 }
 
 .labelFlex {
-    display: flex;
-    justify-content: center;
-    margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
 
-    gap: 48px;
+  gap: 48px;
 }
