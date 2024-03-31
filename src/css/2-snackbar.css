@@ -1,0 +1,46 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.spanDelay {
+    display: flex;
+}
+
+.inputNumber {
+    padding: 0;
+
+    width: 360px;
+    height: 40px;
+}
+
+.stateEl {
+    margin: 0;
+    padding: 0;
+    width: 360px;
+    height: 75px;
+}
+
+.submitBtn {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+
+    width: 360px;
+    height: 40px;
+    
+    background-color: #4E75FF;
+    color: #FFFFFF;
+
+    border-radius: 8px;
+    border: none;
+}
+
+.labelFlex {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+
+    gap: 48px;
+}

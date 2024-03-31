@@ -8,18 +8,15 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <section>
-      <a href="./index.html">Go to home</a>
-    </section>
-
     <form class="form">
       <label>
-        Delay (ms)
-        <input type="number" name="delay" required />
+        <span class="spanDelay">Delay (ms)</span>
+        <input class="inputNumber" type="number" name="delay" required />
       </label>
     
-      <fieldset>
+      <fieldset class="stateEl">
         <legend>State</legend>
+        <div class="labelFlex">
         <label>
           <input type="radio" name="state" value="fulfilled" required />
           Fulfilled
@@ -28,9 +25,10 @@
           <input type="radio" name="state" value="rejected" required />
           Rejected
         </label>
+        </div>
       </fieldset>
     
-      <button type="submit">Create notification</button>
+      <button class="submitBtn" type="submit">Create notification</button>
     </form>
 
     <script type="module" src="./js/2-snackbar.js"></script>

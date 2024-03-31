@@ -1,0 +1,41 @@
+.timer {
+    display: flex;
+    gap: 24px;
+}
+
+.value {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    letter-spacing: 0.04em;
+}
+    
+
+.label {
+    font-size: 16px;
+}
+
+.startBtn {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+
+    background-color: #CFCFCF;
+
+    width: 75px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+}
+
+.dateTime {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+
+    padding-left: 20px;
+
+    width: 272px;
+    height: 40px;
+    border-radius: 4px;
+}
