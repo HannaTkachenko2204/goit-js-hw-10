@@ -10,9 +10,9 @@ const hoursEl = document.querySelector('[data-hours]');
 const minutesEl = document.querySelector('[data-minutes]');
 const secondsEl = document.querySelector('[data-seconds]');
 
-btnEl.disabled = true;
 let userSelectedDate;
 let intervalId = null;
+//btnEl.disabled = true;
 
 function convertMs(ms) {
   // Number of milliseconds per unit of time
