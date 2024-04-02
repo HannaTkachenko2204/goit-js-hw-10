@@ -4,7 +4,7 @@ import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
 const inputEl = document.querySelector('#datetime-picker');
-const btnEl = document.querySelector('button');
+const btnEl = document.querySelector('.startBtn');
 const daysEl = document.querySelector('[data-days]');
 const hoursEl = document.querySelector('[data-hours]');
 const minutesEl = document.querySelector('[data-minutes]');
@@ -12,7 +12,7 @@ const secondsEl = document.querySelector('[data-seconds]');
 
 let userSelectedDate;
 let intervalId = null;
-//btnEl.disabled = true;
+btnEl.disabled = true;
 
 function convertMs(ms) {
   // Number of milliseconds per unit of time
@@ -51,7 +51,6 @@ const options = {
         position: 'topRight',
         backgroundColor: '#EF4040',
         messageColor: '#FFFFFF',
-        iconColor: '#FFFFFF',
         transitionIn: 'fadeln',
         timeout: 2000,
       });
