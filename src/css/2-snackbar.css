@@ -10,8 +10,9 @@
 
 .inputNumber {
   padding: 0;
+  padding-left: 20px;
 
-  width: 360px;
+  width: 340px;
   height: 40px;
 }
 
